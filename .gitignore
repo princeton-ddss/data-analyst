@@ -8,8 +8,9 @@
 *.key
 
 # Data
-/data/raw/*
-/data/clean/*
+/data/raw/
+/data/clean/
+/data/data.duckdb
 
 # One-off scripts
 .tmp/
