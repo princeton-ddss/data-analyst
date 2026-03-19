@@ -28,5 +28,8 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Logs
+/logs/
+
 # Analysis log
 .data-analyst-log

@@ -33,6 +33,7 @@ Create a virtual environment and install packages for data analysis.
    - `results/`
    - `scripts/`
    - `.tmp/`
+   - `logs/`
 
 4. **Verify**
    - Run `uv run python -c "import polars; import duckdb; print('OK')"` to confirm installation

@@ -23,6 +23,7 @@ go get it. When results are surprising, dig deeper before reporting.
 - Notebooks: `./notebooks/`
 - Scripts: `./scripts/`
 - Throwaway scripts: `./.tmp/`
+- Logs: `./logs`
 
 ## Preferences
 
