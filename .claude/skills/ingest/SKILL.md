@@ -59,10 +59,11 @@ Then clean and load sequentially after all fetches complete.
 
 ## Credentials
 
-- Store in `.env` as `{SOURCE}_API_KEY` or `{SOURCE}_DB_URL`
-- Load via `python-dotenv` — never `source .env` or `cat .env | xargs`
+- Read API keys from the shell environment first via `os.environ.get(...)`, falling back to `python-dotenv` only if the var is not set
+- Expected naming: `{SOURCE}_API_KEY` or `{SOURCE}_DB_URL` (e.g., `CENSUS_API_KEY`)
 - Never echo, print, or log credential values
-- Verify with `[ -n "$VAR" ]`, not by printing
+- Never read, cat, or open `.env` files directly — only access credentials at runtime via `os.environ` or `dotenv.load_dotenv()`
+- If a key is not set anywhere, proceed without it when the API allows unauthenticated access; otherwise, tell the user which env var to set
 
 ## Re-running
 
