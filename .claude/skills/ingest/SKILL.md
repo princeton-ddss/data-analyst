@@ -60,6 +60,7 @@ Then clean and load sequentially after all fetches complete.
 ## Credentials
 
 - Read API keys from the shell environment first via `os.environ.get(...)`, falling back to `python-dotenv` only if the var is not set
+- Never read, cat, or echo shell environment variables. They should not enter conversation context.
 - Expected naming: `{SOURCE}_API_KEY` or `{SOURCE}_DB_URL` (e.g., `CENSUS_API_KEY`)
 - Never echo, print, or log credential values
 - Never read, cat, or open `.env` files directly — only access credentials at runtime via `os.environ` or `dotenv.load_dotenv()`
