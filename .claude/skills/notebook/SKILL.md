@@ -22,9 +22,9 @@ Marimo uses Python to create notebooks, unlike Jupyter which uses JSON. Here's a
 # /// script
 # dependencies = [
 #     "marimo",
-#     "numpy==2.4.3",
+#     "numpy",
 # ]
-# requires-python = ">=3.14"
+# requires-python = ">=3.12"
 # ///
 
 import marimo

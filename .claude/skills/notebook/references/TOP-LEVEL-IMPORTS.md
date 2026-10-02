@@ -9,9 +9,9 @@ The defined function or class can only refer to symbols defined in the setup cel
 # /// script
 # dependencies = [
 #     "marimo",
-#     "numpy==2.4.2",
+#     "numpy",
 # ]
-# requires-python = ">=3.14"
+# requires-python = ">=3.12"
 # ///
 
 import marimo
