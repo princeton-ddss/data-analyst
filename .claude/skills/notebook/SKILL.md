@@ -11,7 +11,7 @@ Create or open a Marimo notebook in `notebooks/`.
 
 1. If a name is given, check if `notebooks/<name>.py` exists
 2. If it exists, open it
-3. If not, create it using the `marimo-notebook` skill conventions
+3. If not, create it following the conventions below
 4. If no name given, use a timestamp: `notebook_YYYYMMDD_HHMMSS.py`
 5. Open with `marimo edit --watch <file>` (use `run_in_background: true`)
 

@@ -20,7 +20,7 @@ Answer research questions using appropriate statistical methods.
 
 2. **Check data availability**
    - Check `data/sources.yaml` and `data/clean/` to see what's available
-   - If data is missing, invoke the `data-manager` skill to ingest it
+   - If data is missing, invoke the `ingest` skill to ingest it
    - If datasets need linking, invoke the `match` skill
    - If spatial operations are needed, invoke the `geo` skill
 
@@ -40,7 +40,7 @@ Answer research questions using appropriate statistical methods.
    Use when the user asks for a notebook, wants to explore interactively,
    or says "open in marimo" / "make it interactive".
 
-   - Create the notebook following the `marimo-notebook` skill conventions
+   - Create the notebook following the `notebook` skill conventions
    - Save to `notebooks/`
    - Open for the user using `run_in_background: true`: `marimo edit --watch <file>`
 
