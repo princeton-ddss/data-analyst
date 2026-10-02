@@ -47,8 +47,9 @@ Answer research questions using appropriate statistical methods.
 ## Parallel experiments
 
 For robustness checks, model comparisons, or exploring multiple hypotheses,
-spawn multiple `experimenter` agents in parallel. Each runs one specification
-and returns structured results. Synthesize the findings yourself.
+spawn multiple general-purpose agents in parallel. Give each one a single
+specification and ask it to return structured results (estimates, 95% CIs,
+p-values, N). Synthesize the findings yourself.
 
 Examples:
 - Test the same model on different subsets (by region, time period, demographic)

@@ -53,8 +53,8 @@ script, and pipeline.
 ## Parallel fetching
 
 When multiple sources or subsets need to be fetched (e.g., "get census and
-election data for 2016-2020"), spawn `fetcher` agents in parallel — one per
-source or API call. Each fetcher downloads its data and saves to `data/raw/`.
+election data for 2016-2020"), spawn general-purpose agents in parallel — one
+per source or API call. Each agent downloads its data and saves to `data/raw/`.
 Then clean and load sequentially after all fetches complete.
 
 ## Credentials
