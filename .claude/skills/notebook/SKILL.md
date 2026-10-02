@@ -13,7 +13,7 @@ Create or open a Marimo notebook in `notebooks/`.
 2. If it exists, open it
 3. If not, create it following the conventions below
 4. If no name given, use a timestamp: `notebook_YYYYMMDD_HHMMSS.py`
-5. Open with `marimo edit --watch <file>` (use `run_in_background: true`)
+5. Open with `uv run marimo edit --watch <file>` (use `run_in_background: true`)
 
 
 Marimo uses Python to create notebooks, unlike Jupyter which uses JSON. Here's an example notebook: 

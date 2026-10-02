@@ -42,7 +42,7 @@ Answer research questions using appropriate statistical methods.
 
    - Create the notebook following the `notebook` skill conventions
    - Save to `notebooks/`
-   - Open for the user using `run_in_background: true`: `marimo edit --watch <file>`
+   - Open for the user using `run_in_background: true`: `uv run marimo edit --watch <file>`
 
 ## Parallel experiments
 
