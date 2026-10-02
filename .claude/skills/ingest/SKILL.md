@@ -18,8 +18,8 @@ script, and pipeline.
 ## Workflow
 
 1. **Check if source already exists**
-   - Read `data/sources.yaml` — if the source is already registered, skip to step 2
-   - If it's a new source, register it first (step 5)
+   - Read `data/sources.yaml` to see whether the source is already registered
+   - Either way, continue to step 2; new sources get registered in step 5
 
 2. **Fetch raw data**
    - Download/query the requested subset (years, geography, variables)
@@ -36,7 +36,7 @@ script, and pipeline.
    - Output to `data/clean/{source}.parquet`
 
 4. **Load into DuckDB**
-   - Register the cleaned parquet as a table in the project database
+   - Register the cleaned parquet as a table in the project database, `data/data.duckdb`
    - Verify the table: row count, schema, sample rows
 
 5. **Register the source** (new sources only)
