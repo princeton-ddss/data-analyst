@@ -265,10 +265,10 @@ Make sure these are checked before handing a notebook back to the user.
 
 ## api docs
 
-If the user specifically wants you to use a marimo function, you can locally check the docs via: 
+If the user specifically wants you to use a marimo function, you can locally check the docs by writing a one-off script (e.g. `.tmp/marimo_help.py` containing `import marimo as mo; help(mo.ui.form)`) and running it:
 
 ```
-uv --with marimo run python -c "import marimo as mo; help(mo.ui.form)"
+uv run --with marimo python .tmp/marimo_help.py
 ```
 
 ## tests 
