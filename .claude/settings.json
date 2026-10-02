@@ -38,7 +38,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -r '.tool_input | .skill + \" | \" + (.args // \"no args\")' | { read -r line && echo \"$(date '+%Y-%m-%d %H:%M:%S') | $line\" >> logs/skills.log; }"
+            "command": "mkdir -p logs && jq -r '.tool_input | .skill + \" | \" + (.args // \"no args\")' | { read -r line && echo \"$(date '+%Y-%m-%d %H:%M:%S') | $line\" >> logs/skills.log; }"
           }
         ]
       }
