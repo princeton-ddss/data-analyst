@@ -13,7 +13,6 @@
       "Bash(uv venv)",
       "Bash(uv venv *)",
       "Bash(uv pip install *)",
-      "Bash(uv add *)",
       "Bash(uv run python scripts/*)",
       "Bash(uv run python .tmp/*)",
       "Bash(uv run --with marimo python .tmp/*)",
