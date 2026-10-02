@@ -31,8 +31,5 @@ Thumbs.db
 # Logs
 /logs/
 
-# Analysis log
-.data-analyst-log
-
 # Claude
 settings.local.json
