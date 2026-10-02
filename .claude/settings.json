@@ -28,6 +28,13 @@
       "Edit(.tmp/**)",
       "Bash(marimo *)",
       "Bash(.venv/bin/marimo *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(.credentials/**)",
+      "Bash(cat .env*)",
+      "Bash(source .env*)"
     ]
   },
   "hooks": {
