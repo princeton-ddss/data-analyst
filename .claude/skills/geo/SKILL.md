@@ -29,13 +29,14 @@ Translate between geographic units (ZIP ↔ county, tract ↔ county).
 
 ### Mapping
 Choropleth and point maps.
-- Interactive: folium → HTML in `notebooks/`
-- Static: matplotlib + geopandas → PNG in `notebooks/`
+- Interactive: folium → HTML in `results/`
+- Static: matplotlib + geopandas → PNG in `results/`
 
 ## Workflow
 
 1. Identify the task (spatial join, geocoding, crosswalk, mapping)
-2. Get boundary files via pygris if needed
+2. Get boundary files via pygris if needed, passing `year=2020` explicitly
+   (don't rely on pygris's default vintage)
 3. Verify CRS alignment (reproject if necessary)
 4. Execute the operation
 5. Open outputs: `open <file>` (use `run_in_background: true`)
