@@ -31,6 +31,7 @@ Create a virtual environment and install packages for data analysis.
    - `data/raw/`
    - `data/clean/`
    - `results/`
+   - `notebooks/`
    - `scripts/`
    - `.tmp/`
    - `logs/`
