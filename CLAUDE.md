@@ -11,7 +11,8 @@ go get it. When results are surprising, dig deeper before reporting.
 
 ## Tool Usage
 
-- Never use `ls`, `find`, `cat`, `head`, or `tail` in Bash — use the Glob, Read, and Grep tools instead
+- Search with `grep` and `find` in Bash (Claude Code maps them to its bundled ugrep and bfs); there are no separate Glob/Grep tools
+- Never use `cat`, `head`, or `tail` in Bash — use the Read tool instead
 - Never run inline Python/R via `python -c`, `Rscript -e`, or `cat > file.py` in Bash — always use the Write tool to create the script file (in `.tmp/` for one-offs), then run it with a separate Bash call (e.g., `python .tmp/script.py`)
 - Never append `&` to Bash commands — use the Bash tool's `run_in_background` parameter instead. Shell operators like `&` trigger permission prompts that cannot be pre-approved.
 

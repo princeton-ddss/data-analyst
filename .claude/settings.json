@@ -2,6 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(ls *)",
+      "Bash(grep *)",
+      "Bash(find *)",
       "Bash(mkdir *)",
       "Bash(python *)",
       "Bash(python3 *)",
@@ -29,6 +31,10 @@
       "Edit(.tmp/**)",
       "Bash(marimo *)",
       "Bash(.venv/bin/marimo *)"
+    ],
+    "deny": [
+      "Bash(find *-delete*)",
+      "Bash(find *-exec*)"
     ]
   },
   "hooks": {
