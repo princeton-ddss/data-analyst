@@ -42,6 +42,16 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/log-slash-skill.sh 2>/dev/null || true"
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
